@@ -1,0 +1,226 @@
+/* General styles */
+body {
+    font-family: 'Linux Libertine', 'Georgia', serif;
+    color: #202122;
+    background-color: #f9f9f9;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #fff;
+    border-bottom: 1px solid #a2a9b1;
+    padding: 10px;
+}
+
+#header-content {
+    max-width: 960px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Distributes space between elements */
+}
+
+#p-logo {
+    display: flex;
+    align-items: center;
+}
+
+#p-logo a img {
+    height: 40px;
+    width: auto;
+}
+
+.mw-wiki-wordmark {
+    height: 24px;
+    width: auto;
+    margin-left: 10px;
+}
+
+/* Personal navigation */
+#p-personal {
+    display: flex;
+    align-items: center;
+}
+
+#p-personal ul {
+    display: flex; /* Display links in a row */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#p-personal ul li {
+    margin: 0 10px; /* Space between links */
+}
+
+form#searchform {
+    display: flex;
+    align-items: center;
+}
+
+form#searchform input[type="search"] {
+    padding: 5px;
+    border: 1px solid #a2a9b1;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+
+form#searchform button {
+    padding: 5px 10px;
+    background-color: #0645ad;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+form#searchform button:hover {
+    background-color: #05377a;
+}
+
+/* Sidebar */
+#mw-panel {
+    width: 240px;
+    position: fixed;
+    top: 70px;
+    left: 0;
+    background-color: #f8f9fa;
+    border-right: 1px solid #a2a9b1;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+.portal-content h3 {
+    font-size: 1.2em;
+    color: #333;
+    border-bottom: 2px solid #a2a9b1;
+    padding-bottom: 5px;
+}
+
+.portal ul {
+    list-style: none;
+    padding: 0;
+}
+
+.portal ul li {
+    margin: 0.5em 0;
+}
+
+.portal ul li a {
+    color: #0645ad;
+    text-decoration: none;
+}
+
+.portal ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main content area */
+main {
+    margin-left: 260px; /* Adjusting margin for sidebar */
+    padding: 20px;
+    max-width: 960px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+h1, h2 {
+    color: #222;
+}
+
+h2 {
+    font-size: 1.5em;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+    margin-top: 20px;
+}
+
+/* Section styling */
+section {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+h3 {
+    font-size: 1.2em;
+    margin-top: 15px;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+}
+
+/* Infobox */
+#infobox {
+    float: right;
+    width: 250px;
+    background: #f8f9fa;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+#infobox h2 {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+#infobox img {
+    max-width: 100%;
+    height: auto;
+}
+
+#infobox table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#infobox th, #infobox td {
+    padding: 5px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+/* Footer */
+footer {
+    font-size: 0.9em;
+    background-color: #f8f9fa;
+    border-top: 1px solid #a2a9b1;
+    padding: 15px;
+    text-align: center;
+    color: #555;
+}
+
+/* Links */
+a {
+    color: #0645ad;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive layout for mobile */
+@media (max-width: 768px) {
+    #mw-panel {
+        display: none;
+    }
+    main {
+        margin: 20px;
+        max-width: 100%;
+    }
+
+    #infobox {
+        float: none;
+        width: auto;
+    }
+}
